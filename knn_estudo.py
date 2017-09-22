@@ -9,6 +9,7 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score
 from sklearn import datasets
 import dataset as ds
 
@@ -33,7 +34,7 @@ def testImg(image):
     return [descs[0]]
     
 
-# Descritor feito de forma manual
+# Dataset feito de forma manual
 X2 = ds.DataSet.load_data()
 Y2 = ds.DataSet.load_target()
 
