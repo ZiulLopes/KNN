@@ -57,7 +57,7 @@ def testImgGCH(image):
 X2 = ds.DataSet.dataset_load_horse_cow()
 Y2 = ds.DataSet.load_target()
 
-knn = KNeighborsClassifier(n_neighbors=5, metric = "euclidean")
+knn = KNeighborsClassifier(n_neighbors=7, metric = "euclidean")
 knn.fit(X2, Y2) 
 
 pathTest = r"""C:\Projects\python_projects\MachineLearning\KNN\test"""
